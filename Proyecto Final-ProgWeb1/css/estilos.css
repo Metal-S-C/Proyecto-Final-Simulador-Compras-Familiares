@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#3498db,#2ecc71);
+    min-height:100vh;
+}
+
+#inicio{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.contenedor{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    width:350px;
+    text-align:center;
+}
+
+header{
+    background:#2c3e50;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#27ae60;
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#219150;
+}
+
+.tarjetaCompra{
+    background:white;
+    margin-top:15px;
+    padding:15px;
+    border-radius:10px;
+    border-left:6px solid #3498db;
+}
+
+.exito{
+    color:green;
+}
+
+.error{
+    color:red;
+}
+
+.contexto{
+    background: white;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-left: 8px solid #3498db;
+}
+
+.contexto h2{
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contexto p{
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+@media(max-width:768px){
+
+    .contenedor{
+        width:90%;
+    }
+
+}

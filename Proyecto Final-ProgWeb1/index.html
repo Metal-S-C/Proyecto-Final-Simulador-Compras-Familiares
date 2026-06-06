@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Compras Familiares</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Pantalla de Bienvenida -->
+    <section id="inicio">
+        <div class="contenedor">
+            <h1>Simulador de Compras Familiares</h1>
+            <p>Ingrese su nombre para comenzar</p>
+            <input type="text" id="nombre" placeholder="Nombre del estudiante">
+            <button onclick="ingresar()">
+                Ingresar al Simulador
+            </button>
+        </div>
+    </section>
+
+    <!-- Simulador -->
+    <section id="simulador" style="display:none;">
+        <header>
+            <h1>Simulador de Compras Familiares</h1>
+            <h2 id="saludo"></h2>
+        </header>
+
+        <section class="contexto">
+            <h2>📊 Contexto</h2>
+            <p>
+                Este simulador permite analizar si el presupuesto familiar es suficiente
+                para cubrir la compra de productos básicos. A través de cálculos dinámicos,
+                el usuario podrá conocer cuánto dinero ha gastado, cuánto le queda disponible
+                y si sus ingresos alcanzan para satisfacer sus necesidades.
+            </p>
+        </section>
+
+        <main>
+            <div class="card">
+                <h2>Registrar Presupuesto</h2>
+                <input type="number" id="presupuesto" placeholder="Presupuesto Inicial">
+                <button onclick="registrarPresupuesto()">
+                    Guardar Presupuesto
+                </button>
+            </div>
+            <div class="card">
+                <h2>Agregar Compra</h2>
+                <input type="text" id="producto" placeholder="Producto">
+                <input type="number" id="precio" placeholder="Precio">
+                <input type="number" id="cantidad" placeholder="Cantidad">
+                <button onclick="calcular()">
+                    Registrar Compra
+                </button>
+            </div>
+            <div class="card">
+                <h2>Estado del Presupuesto</h2>
+                <h3 id="presupuestoRestante">
+                    Presupuesto restante: 0 Bs
+                </h3>
+            </div>
+            <div id="resultado"></div>
+
+            <div class="card">
+                <h2>Caso de Estudio</h2>
+                <button onclick="cargarCaso()">Cargar Caso de Prueba</button>
+            </div>
+        </main>
+    </section>
+
+    <script src="js/compras.js"></script>
+
+</body>
+</html>
